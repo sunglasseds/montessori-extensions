@@ -1,0 +1,163 @@
+body {
+  background: #f7f7f7;
+}
+
+header {
+  padding: 98px 25px 245px 25px;
+}
+@media (max-width: 700px) {
+  header {
+    padding: 25px 0 195px 0;
+  }
+}
+header .logo {
+  float: left;
+  max-width: 297px;
+  width: 100%;
+  height: auto;
+}
+header nav {
+  float: right;
+}
+@media (max-width: 880px) {
+  header nav {
+    clear: both;
+    float: none;
+  }
+}
+@media (max-width: 880px) {
+  header nav ul {
+    padding: 25px 0 0 0;
+  }
+}
+header nav ul li {
+  float: left;
+  list-style: none;
+  line-height: 0;
+  margin: 0 25px;
+}
+@media (max-width: 880px) {
+  header nav ul li {
+    margin: 0 5px;
+  }
+}
+header nav ul li a.apps span.tick {
+  width: 35px;
+  height: 35px;
+  background: white;
+  margin-top: 47px;
+  margin-left: -43px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  display: none;
+}
+@media (max-width: 700px) {
+  header nav ul li a.apps span.tick {
+    margin-top: 44px;
+    margin-left: -35px;
+  }
+}
+header nav ul li div.apps-menu {
+  display: none;
+  position: absolute;
+  margin-top: 45px;
+  background: white;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  padding: 40px 0;
+}
+@media (max-width: 700px) {
+  header nav ul li div.apps-menu {
+    margin-top: 38px;
+    padding: 20px 0;
+  }
+}
+header nav ul li div.apps-menu:hover a {
+  opacity: .5;
+}
+header nav ul li div.apps-menu div.app {
+  float: left;
+  margin: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+header nav ul li div.apps-menu div.app:hover {
+  opacity: 1;
+}
+header nav ul li div.apps-menu div.app:nth-child(4):after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #f7f7f7;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 700px) {
+  header nav ul li div.apps-menu div.app:nth-child(4):after {
+    display: none;
+  }
+}
+header nav ul li div.apps-menu div.app a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.875em;
+  width: 270px;
+  height: 110px;
+  padding: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header nav ul li div.apps-menu div.app a:hover {
+  border-bottom: none;
+  opacity: 1;
+}
+header nav ul li div.apps-menu div.app img {
+  float: left;
+  margin-right: 15px;
+  width: 100%;
+  max-width: 65px;
+  height: auto;
+}
+header nav ul li div.apps-menu div.app .title {
+  color: black;
+  display: block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-family: "antique-olive-reg", "system-ui-reg",  sans-serif;
+}
+header nav ul li div.apps-menu div.app .cat {
+  color: rgba(60, 60, 60, 0.4);
+  margin-top: 10px;
+  display: inline-block;
+  font-family: "antique-olive-light", "system-ui-light", sans-serif;
+}
+header nav ul li a {
+  padding: 0 0;
+  font-size: 27px;
+  text-decoration: none;
+  line-height: 16px;
+  color: black;
+  font-family: "antique-olive-light", "system-ui-light", sans-serif;
+}
+header nav ul li a:hover, header nav ul li a.here {
+  border-bottom: 2px solid black;
+}
+@media (max-width: 700px) {
+  header nav ul li a {
+    font-size: 1.025em;
+  }
+}
+
+div#content {
+  background-color: #fff;
+}
